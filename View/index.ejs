@@ -18,7 +18,7 @@
                         <a class="nav-link" href="#">이상형 월드컵</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">이상형 월드컵 만들기</a>
+                        <a class="nav-link" href="/write">이상형 월드컵 만들기</a>
                     </li>
                     </ul>
                 </div>
@@ -46,6 +46,63 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+            </div>
+            <div class="warrap">
+                <table>
+                    <thead>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <% for(let j = 0; j < 3; j++) { %>
+                        <!-- tr = col, td = row-->
+                        <tr class="poduct_box">
+                            <% for(let i = 0; i < 4; i++) { %>
+                            <td bgcolor="#fff">
+                                <div class="product" style="height:200px;padding:0px">
+                                    <!-- left image -->
+                                    <div style="float:left;width:50%;height:180px;background-image: url('https://img.piku.co.kr/w/uploads/721FCA/9d4291f0483b58bf3f1ecd0ee17d40c4.jpg');background-repeat:no-repeat;background-size: cover;background-position: center top;display:flex;">
+
+                                    </div>
+                                    <!-- right image -->
+                                    <div style="width:50%;height:180px;background-image: url('https://img.piku.co.kr/w/uploads/721FCA/a079015d6b167a610dbfc6e0ce9ea10c.jpg');background-repeat:no-repeat;background-size: cover;background-position: center top;display:flex;">
+
+                                    </div>
+                                    <!-- left font -->
+                                    <div style="float:left;color:#676a6c;width:50%;max-height:24px;overflow: hidden; text-overflow: ellipsis;white-space: nowrap;display:inline-block;">
+                                        test
+                                    </div>
+                                    <!-- right font -->
+                                    <div style="color:#676a6c;width:50%;max-height:24px;overflow: hidden; text-overflow: ellipsis;white-space: nowrap;display:inline-block;">
+                                        test222
+                                    </div>
+                                </div>
+                                <!--text button group -->
+                                <div class="product_link">
+                                    <a class="product_name" href="#">aaaaaaa</a>
+                                    <div class="space"></div>
+                                    <!-- button -->
+                                    <div>
+                                        <a href="" class="btn btn-sm btn-outline btn-danger ">
+                                            <i>시작하기</i>
+                                        </a>
+                                        <a href="" class="btn btn-sm btn-outline btn-warning frank">
+                                            <i>랭킹보기</i>
+                                        </a>
+                                        <button type="button" class="btn btn-sm btn-outline btn-success fshare">
+                                            <i>공유</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <% } %>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
             </div>
         </div>
 
